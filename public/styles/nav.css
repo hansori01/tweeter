@@ -1,0 +1,17 @@
+nav {
+  color: #ffffff;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav span {
+  font-family: 'Bungee', sans-serif;
+  margin: 1.5em;
+}
+
+/* 
+The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges */
+ */ */
