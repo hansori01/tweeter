@@ -10,7 +10,7 @@ const app           = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// The in-memory database of tweets. It's a basic object with an array in it.
+// In-memory database of tweets. An array of objects.
 const db = require("./lib/in-memory-db");
 
 // The `data-helpers` module provides an interface to the database of tweets.

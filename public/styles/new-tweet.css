@@ -1,14 +1,18 @@
 section.new-tweet {
   display: flex;
   flex-direction: column;
-  width: 27em;
+  max-width: 27em;
+  min-width: 27em;
 }
 
 .new-tweet h2 {
-  font-family: 'Bungee', sans-serif;
-  font-size: 0.9em;
-  color: #d6a67f;
-  margin-left: 1.5em;
+  font-family: Tahoma, sans-serif;
+  font-size: 0.6em;
+  color: #fffffff1;
+  margin-left: 2em;
+  margin-top: 1.5em;
+  text-shadow: 2px 2px 2px rgba(0,0,0, 0.25);
+
 }
 
 form {
@@ -19,7 +23,7 @@ form {
   justify-content: center;
   align-self: center;
   background-color: #ffffff;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.616);
 }
 
@@ -36,14 +40,14 @@ textarea {
 textarea#tweet-text {
   display: flex;
   flex-direction: column;
-  border-bottom: solid 2.7px #7EA4A9;
+  border-bottom: solid 2.8px #7EA4A9;
   align-self: center;
   background-color: #ffffffda;
 
 }
 
 textarea::placeholder {
-  opacity: .6;
+  opacity: .65;
   color: #545149;
   font-family: Tahoma, sans-serif;
   justify-content: flex-end;
@@ -63,9 +67,9 @@ form div {
 
 .button-counter button {
   border: none;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   font-family: 'Bungee', sans-serif;
-  font-size: .8em;
+  font-size: .75em;
   color: rgba(255, 255, 255, 0.9);
   background: rgb(240, 122, 86);
   padding: .2em .45em .2em .45em;
@@ -74,9 +78,10 @@ form div {
 }
 
 .button-counter button:hover {
-  background-color: #f4f1ec;
+  background-color: #ffffffda;
   color: rgba(64, 86, 161, 0.8);
   box-shadow: 0 8px 0px -6px #4056A1;
+  border-radius: 0px;
 }
 
 .counter {

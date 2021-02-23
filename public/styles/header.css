@@ -10,10 +10,22 @@ assist: https://www.transparenttextures.com/
 header {
   height: 400px;
   width: 100vw;
-  background: url(../images/green-gobbler.png);
-  background-color: #33585d;
+  background: url(../images/food.png);
+  background-color: #202b3a;/*#33585d*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
+}
+
+div.name {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin: 0px;
+}
+
+div h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
