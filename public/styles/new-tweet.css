@@ -1,0 +1,61 @@
+section.new-tweet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-evenly;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  overflow: auto;
+  opacity: .8;
+  outline: none;
+  width: 100%;
+}
+
+textarea#tweet-text {
+  border-bottom: solid 3px #7EA4A9;
+}
+
+textarea::placeholder {
+  opacity: .6;
+  color: #545149;
+  font-family: Tahoma, sans-serif;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-counter button {
+  border: none;
+  transition-duration: 0.2s;
+  font-family: 'Bungee', sans-serif;
+  font-size: .8em;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgb(240, 122, 86);
+  padding: .1em .4em .1em .4em;
+  border-radius: 10px;
+}
+
+.button-counter button:hover {
+  background-color: #f4f1ec;
+  color: rgba(64, 86, 161, 0.6);
+  box-shadow: 0 8px 0px -6px #4056A1;
+}
+
+.counter {
+  font-family: Tahoma, sans-serif;
+  color: #7EA4A9;
+  font-size: 0.5em;
+  font-weight: 900;
+}
