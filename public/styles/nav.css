@@ -5,11 +5,18 @@ nav {
   background-color: #4056A1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav span {
   font-family: 'Bungee', sans-serif;
   margin: 1.5em;
+}
+
+nav div {
+  margin: 1.5em;
+  font-size: .7em;
+  align-content: center;
 }
 
 /* 
