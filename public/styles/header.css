@@ -9,9 +9,9 @@ assist: https://www.transparenttextures.com/
 
 header {
   height: 400px;
-  width: 100%;
+  width: 100vw;
   background: url(../images/green-gobbler.png);
-  background-color: #a79375;
+  background-color: #7EA4A9;
   display: flex;
   flex-direction: column;
   justify-content: center;
