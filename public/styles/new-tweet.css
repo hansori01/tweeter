@@ -1,39 +1,64 @@
 section.new-tweet {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 27em;
+}
+
+.new-tweet h2 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 0.9em;
+  color: #d6a67f;
+  margin-left: 1.5em;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  height: 150px;
-  justify-content: space-evenly;
+  height: 8em;
+  width: 95%;
+  justify-content: center;
+  align-self: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.616);
 }
 
 textarea {
   border: none;
   resize: none;
   overflow: auto;
-  opacity: .8;
+  opacity: .9;
   outline: none;
-  width: 100%;
+  width: 80%;
+  height: 3em;
 }
 
 textarea#tweet-text {
-  border-bottom: solid 3px #7EA4A9;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 2.7px #7EA4A9;
+  align-self: center;
+  background-color: #ffffffda;
+
 }
 
 textarea::placeholder {
   opacity: .6;
   color: #545149;
   font-family: Tahoma, sans-serif;
+  justify-content: flex-end;
 }
 
 form div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.button-counter {
+  width: 77%;
+  align-self: center;
 }
 
 .button-counter button {
@@ -43,13 +68,14 @@ form div {
   font-size: .8em;
   color: rgba(255, 255, 255, 0.9);
   background: rgb(240, 122, 86);
-  padding: .1em .4em .1em .4em;
+  padding: .2em .45em .2em .45em;
+  margin-top: .5em;
   border-radius: 10px;
 }
 
 .button-counter button:hover {
   background-color: #f4f1ec;
-  color: rgba(64, 86, 161, 0.6);
+  color: rgba(64, 86, 161, 0.8);
   box-shadow: 0 8px 0px -6px #4056A1;
 }
 

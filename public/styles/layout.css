@@ -17,8 +17,8 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color:  rgba(240, 122, 86, 0.698);
+  background-color: #202b3a;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
