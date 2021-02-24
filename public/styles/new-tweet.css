@@ -15,7 +15,7 @@ section.new-tweet {
 }
 
 .new-tweet h2::first-letter{
-  color: rgb(240, 122, 86);
+  color: #ED451D;
 }
 
 form {
@@ -74,24 +74,20 @@ form div {
 
 .button-counter button {
   border: none;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
   font-family: 'Bungee', sans-serif;
   font-size: .75em;
-  color: rgb(240, 122, 86);
+  color: #ED451D;
   background: #ffffff;
-
   padding: .2em .45em .2em .45em;
   margin-top: .5em;
   border-radius: 10px;
 }
 
 form:hover .button-counter button {
-  border: none;
-  transition-duration: 0.3s;
   font-family: 'Bungee', sans-serif;
-  font-size: .75em;
   color: rgba(255, 255, 255, 0.9);
-  background: rgb(240, 122, 86);
+  background: #ED451D;
   padding: .2em .45em .2em .45em;
   margin-top: .5em;
   border-radius: 10px;
