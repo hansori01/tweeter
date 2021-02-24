@@ -40,7 +40,8 @@ section.tweets-container {
   width: 60vw;
 }
 .tweets-container h2 {
-  display: flex;
+  /* display: flex; */
+  display: block;
   font-family: Tahoma, sans-serif;
   font-size: 0.8em;
   color: #fffffff1;
@@ -49,9 +50,9 @@ section.tweets-container {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* .tweets-container h2::first-letter{
+section.tweets-container h2::first-letter{
   color: #7EA4A9;
-} */
+}
 
 article {
   display: flex;

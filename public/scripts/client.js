@@ -84,6 +84,17 @@ $(document).ready(function () {
 
 
 
+// a function using ajax to post tweet to db
+// target the form element in HTML
+$('form').submit(event => {
+  event.preventDefault();
+  console.log($('textarea').val());
+})
+// prevent the default behavior of post request and reloading page.
+//with jQuery, listen for form submission with submit handler
+// use .serialize() turns form data into query string
+// the serialized data is sent to server in the data field of AJAX post request.
+
 
 
 

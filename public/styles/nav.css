@@ -15,6 +15,14 @@ nav span {
   color: #EEC124;
 }
 
+nav strong {
+  display: block;
+  white-space: pre;
+  /*look up the problem as others have probably approached this issue as well
+  pinpointed strong to be 'inline' so we turn that to 'block' 
+  and we target it to read white-space*/
+}
+
 nav div {
   display: flex;
   align-items: center;
@@ -24,13 +32,13 @@ nav div {
   color: #ffffff
 }
 
-
-nav div ::first-letter {
+nav strong::first-letter {
   color: #ED451D;
 }
 
 .fixFixed {
   height: 100px;
 }
+
 /* 
 The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges */
