@@ -6,28 +6,54 @@ $(document).ready(function () {
    */
 
   // Fake data taken from initial-tweets.json
-  const data = {
-    "user": {
-      "name": "Newton",
-      "avatars": "/images/profile2.png",
-      "handle": "@SirIsaac"
+  const data = [
+    {
+      "user": {
+        "name": "Bruno Mars",
+        "avatars": "/images/profile2.png",
+        "handle": "@uptown_dont_flunk"
+      },
+      "content": {
+        "text": "I'm replacing twitter with this app!"
+      },
+      "created_at": 1461116232227
     },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+    {
+      "user": {
+        "name": "Ariel",
+        "avatars": "/images/profile3.png",
+        "handle": "@underthec"
+      },
+      "content": {
+        "text": "What is afoot on this app?"
+      },
+      "created_at": 1461116232227
     },
-    "created_at": 1461116232227
+    {
+      "user": {
+        "name": "Violet Beauregarde",
+        "avatars": "/images/profile4.png",
+        "handle": "@blueberry_girl17"
+      },
+      "content": {
+        "text": "...back on gum!"
+      },
+      "created_at": 1461116232227
+    }
+  ]
+
+  //loops array of tweet objects and appends each to ".messages"
+  const renderTweets = function (tweets) {
+
+    for (const tweet of tweets) {
+      const $tweet = createTweetElement(tweet);
+      $('.messages').append($tweet);
+    }
+
   }
 
-  // const renderTweets = function(tweets) {
-  // // loops through tweets
-  // // calls createTweetElement for each tweet
-  // // takes return value and appends it to the tweets container
-  // }
-
-
-
+  // individual Tweet HTML body is returned
   const createTweetElement = function (tweet) {
-    //takes in a tweet object
     let $tweet = $(`<article>
     <header>
     <div class='tweeter'>
@@ -52,4 +78,13 @@ $(document).ready(function () {
 
     return $tweet;
   }
+  // appends data in hardcoded 'db' to html body.
+  renderTweets(data);
+
+
+
+
+
+
+
 });
