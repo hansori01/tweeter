@@ -18,14 +18,19 @@ header.user {
   align-items:center;
 }
 
+.user img {
+  height: 15rem;
+}
+
 div.name {
   display: flex;
   justify-content: flex-start;
-  font-size: 18px;
+  font-size: 22px;
+  letter-spacing: 0.1em;
   margin: 0px;
 }
 
 div h2 {
   margin-top: 0px;
   margin-bottom: 10px;
-}
+  text-shadow: #FFF 0px 0px 3px,#7640A3 0px 0px 2px, #7640A3 0px 0px 5px, #7640A3 0px 0px 10px, #7640A3 0px 0px 150px, #7640A3 0px 0px 20px;}

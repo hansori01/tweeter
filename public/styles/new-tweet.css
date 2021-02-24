@@ -2,33 +2,37 @@ section.new-tweet {
   display: flex;
   flex-direction: column;
   min-height: 12em;
-  width: 100%;
+  width: 60vw;
 }
 
 .new-tweet h2 {
   font-family: Tahoma, sans-serif;
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: #fffffff1;
   margin-left: 2em;
   margin-top: 1.5em;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.new-tweet h2::first-letter{
+  color: rgb(240, 122, 86);
+}
+
 form {
   display: flex;
   flex-direction: column;
-  height: 8em;
-  width: 90%;
+  min-height: 8em;
+  width: 60vw;
   justify-content: center;
   align-self: center;
   background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.616);
+  box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.404);
 
 }
 
 form:hover {
-  box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.431);
+  box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.74);
 }
 
 textarea {
@@ -73,6 +77,19 @@ form div {
   transition-duration: 0.3s;
   font-family: 'Bungee', sans-serif;
   font-size: .75em;
+  color: rgb(240, 122, 86);
+  background: #ffffff;
+
+  padding: .2em .45em .2em .45em;
+  margin-top: .5em;
+  border-radius: 10px;
+}
+
+form:hover .button-counter button {
+  border: none;
+  transition-duration: 0.3s;
+  font-family: 'Bungee', sans-serif;
+  font-size: .75em;
   color: rgba(255, 255, 255, 0.9);
   background: rgb(240, 122, 86);
   padding: .2em .45em .2em .45em;
@@ -80,7 +97,8 @@ form div {
   border-radius: 10px;
 }
 
-.button-counter button:hover {
+
+form:hover .button-counter button:hover {
   background-color: #ffffffda;
   color: rgba(64, 86, 161, 0.8);
   box-shadow: 0 8px 0px -6px #4056A1;

@@ -1,27 +1,36 @@
 nav {
-  height: 120px;
+  height: 100px;
   width: 100vw;
   background-color: #202b3a;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 nav span {
   font-family: 'Bungee', sans-serif;
   margin: 1.5em;
-  color: #d6a67f;
-
+  color: #EEC124;
 }
 
 nav div {
+  display: flex;
+  align-items: center;
+  white-space: normal;
   margin: 1.5em;
   font-size: .7em;
-  align-content: center;
-  justify-content: center;
-  color:#fffffff1;
+  color: #ffffff
 }
 
 
+nav div ::first-letter {
+  color: rgb(240, 122, 86);
+}
+
+.fixFixed {
+  height: 100px;
+}
 /* 
 The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges */
