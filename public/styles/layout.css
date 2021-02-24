@@ -30,8 +30,28 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50rem;
+  width: 60vw;
 }
+
+section.old-tweets {
+  display: flex;
+  flex-direction: column;
+  min-height: 12em;
+  width: 60vw;
+}
+.old-tweets h2 {
+  display: flex;
+  font-family: Tahoma, sans-serif;
+  font-size: 0.8em;
+  color: #fffffff1;
+  margin-left: 2em;
+  margin-top: 1.5em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* .old-tweets h2::first-letter{
+  color: #7EA4A9;
+} */
 
 article {
   display: flex;
@@ -44,16 +64,11 @@ article {
   border-radius: 15px;
   box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.404);
   margin-bottom: 5%;
-  margin-top: 5%;
 }
 
 article:hover {
   box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.74);
 }
-
-/* article header {
-  display: flex;
-} */
 
 .tweeter {
   display: flex;
