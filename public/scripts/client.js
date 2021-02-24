@@ -67,11 +67,11 @@ $(document).ready(function () {
     <div class='tweet'>${tweet.content.text}<hr></div>
     <footer>
     <div class ='timestamp'><p>1s ago</p></div>
-    <ul class='interact' style="list-style-type:none">
-    <li id='share'>↩</li>
-    <li id='flag'>☆</li>
-    <li id='heart'>❤</li>
-    </ul>       
+    <div class='interact' style="list-style-type:none">
+    <i class="far fa-flag "></i>
+    <i class="fas fa-retweet"></i>
+    <i class="far fa-heart"></i>
+    </div>       
     </footer>
     </article>
     `)
@@ -84,17 +84,29 @@ $(document).ready(function () {
 
 
 
-// a function using ajax to post tweet to db
-// target the form element in HTML
-$('form').submit(event => {
-  event.preventDefault();
-  console.log($('textarea').val());
-})
-// prevent the default behavior of post request and reloading page.
-//with jQuery, listen for form submission with submit handler
-// use .serialize() turns form data into query string
-// the serialized data is sent to server in the data field of AJAX post request.
+  // a function using ajax to post tweet to db
+  // target the form element in HTML
+  //with jQuery, listen for form submission with submit handler
+  $('form').submit(event => {
+    // prevent the default behavior of post request and reloading page.
+    event.preventDefault();
+    // use .serialize() turns form data into query string
+    const tweetData = $('textarea').serialize();
+    // console.log('form data: ' + tweetData)
+    $.ajax({
+      url: '/tweets',
+      method: "POST",
+      // the serialized data is sent to server in the data field of AJAX post request.
+      data: tweetData
+    })
+    .then(console.log(tweetData))
+  });
 
+
+
+  // Create a string in the format name=value&name=value...
+//   const tweetData = $(this).serialize();
+//   console.log(tweetData);
 
 
 

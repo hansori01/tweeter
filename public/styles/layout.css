@@ -142,8 +142,17 @@ article footer {
 
 .interact {
   display: flex;
-  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
   color: #2f2f2f;
+}
+
+.far{
+  margin: 0.4rem;
+}
+.fas{
+  margin: 0.4rem;
 }
 
 /*
