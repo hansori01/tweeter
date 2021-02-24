@@ -30,7 +30,7 @@
 
     </nav>
 
-    <header>
+    <header class='user'>
       <div>
         <img src="/images/profile-hex.png"> 
       </div>
@@ -45,7 +45,6 @@
 
       <section class="new-tweet">
         <h2> > compose Tweet</h2>
-
         <form action="/tweets" method="POST">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
@@ -53,9 +52,23 @@
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-
         </form>
       </section>
+
+
+
+      <article>
+
+        <header>
+User Name handle
+        </header>
+        <footer>
+          10 days ago heart flag reshare
+        </footer>
+
+      </article>
+
+
 
     </main>
   </body>
