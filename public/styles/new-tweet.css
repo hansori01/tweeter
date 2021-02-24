@@ -3,6 +3,7 @@ section.new-tweet {
   flex-direction: column;
   max-width: 27em;
   min-width: 27em;
+  min-height: 12em;
 }
 
 .new-tweet h2 {

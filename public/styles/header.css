@@ -7,7 +7,7 @@ assist: https://www.transparenttextures.com/
 */
 
 
-header {
+header.user {
   height: 400px;
   width: 100vw;
   background: url(../images/food.png);
