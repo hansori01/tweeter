@@ -3,12 +3,13 @@ $(document).ready(function () {
   $("textarea").on('input', function () {
     let charCount = 140 - this.value.length;
     $("output").text(charCount);
+    
     if (charCount < 21) {
-      $("output").css('color', 'DarkSalmon');
+      $("output").css('color', 'LightSalmon');
     } if (charCount < 11) {
-      $("output").css('color', 'DarkOrange');
+      $("output").css('color', 'LightCoral');
     } if (charCount <1) {
-      $("output").css('color', 'Crimson');
+      $("output").css('color', 'Red');
     }
     if (charCount >=21) {
       $("output").css('color', '');
