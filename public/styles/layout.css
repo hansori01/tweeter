@@ -30,8 +30,95 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50rem;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  min-height: 8em;
+  width: 90%;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 15px;
+  box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.600);
+  margin-bottom: 5%;
+}
+
+article:hover {
+  display: flex;
+  flex-direction: column;
+  min-height: 8em;
+  width: 90%;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #7ea4a996;
+  margin-bottom: 5%;
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #183e72c7;
+}
+
+.handle {
+  display: flex;
+  margin-right: 1.2em;
+  color: #7EA4A9;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.user img {
+  height: 4rem;
+  margin: 0 0 0 .4em;
+}
+
+.tweet {
+  display: flex;
+  width: 80%;
+  align-self: center;
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: #2f2f2f;
+}
+
+
+article footer {
+  align-self: center;
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.timestamp {
+  display: flex;
+  font-size: .8rem;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.interact {
+  display: flex;
+  font-size: 1rem;
+  color: #2f2f2f;
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
