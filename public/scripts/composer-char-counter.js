@@ -25,9 +25,9 @@ const charCountColour = function() {
   if (charCount < 21) {
      $("output").css('color', 'LightSalmon');
   } if (charCount < 11) {
-     $("output").css('color', 'LightCoral');
-  } if (charCount < 1) {
      $("output").css('color', 'Tomato');
+  } if (charCount < 1) {
+     $("output").css('color', '#8B0000');
   }
   if (charCount >= 21) {
      $("output").css('color', '');
