@@ -34,7 +34,8 @@
 
     <header class='user'>
       <div>
-        <img src="/images/profile1.png"> 
+        <img id='me' src="/images/profile1.png"> 
+        <img id='error' src="/images/error.png"> 
       </div>
       <br>
       <div class="name">
@@ -46,7 +47,9 @@
     <main class="container">
 
       <section class="new-tweet">
-        <h2> > compose Tweet</h2>
+        <h2 id='compose'> > compose Tweet</h2>
+        <h2 id='short'> > your Tweet must include a message...</h2>
+        <h2 id='long'> > your Tweet is too long...</h2>
         <form action="/tweets" method="POST">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class ='button-counter'>

@@ -22,6 +22,10 @@ header.user {
   height: 15rem;
 }
 
+#error {
+  display:none;
+}
+
 div.name {
   display: flex;
   justify-content: flex-start;

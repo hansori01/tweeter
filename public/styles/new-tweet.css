@@ -2,7 +2,7 @@ section.new-tweet {
   display: flex;
   flex-direction: column;
   min-height: 12em;
-  width: 60vw;
+  width: 63vw;
 }
 
 .new-tweet h2 {
@@ -14,15 +14,33 @@ section.new-tweet {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.new-tweet h2::first-letter{
+.new-tweet h2::first-letter {
   color: #ED451D;
+}
+
+#short {
+  color: #ED451D;
+  display: none;
+}
+
+#short::first-letter {
+  color: #fffffff1;
+}
+
+#long {
+  color: #ED451D;
+  display: none;
+}
+
+#long::first-letter {
+  color: #fffffff1;
 }
 
 form {
   display: flex;
   flex-direction: column;
   min-height: 8em;
-  width: 60vw;
+  width: 63vw;
   justify-content: center;
   align-self: center;
   background-color: #ffffff;
@@ -91,7 +109,6 @@ form:hover .button-counter button {
   margin-top: .5em;
   border-radius: 10px;
 }
-
 
 form:hover .button-counter button:hover {
   background-color: #ffffffda;

@@ -57,16 +57,23 @@ $(document).ready(function () {
   // user submits a tweet
   $('form').submit(function (event) {
     event.preventDefault();
-    const textContent = $(this).text()
     const tweetData = $(this).serialize();
     const tweetLength = $('textarea').val().length;
 
     console.log(tweetLength);
     //alerts thrown if '' or too long
     if (tweetLength > 140) {
-      alert('Your tweet is too long 😜')
+      $('#compose').toggle(300)
+      $('#me').toggle(300)
+      $('#error').toggle(300)
+      $('#long').toggle(300)
+
     } else if (tweetLength === 0) {
-      alert('What did you have on your mind?')
+      $('#compose').toggle(300)
+      $('#short').toggle(300)
+      $('#me').toggle(300)
+      $('#error').toggle(300)
+
     } else {
 
       $.ajax({
@@ -75,6 +82,11 @@ $(document).ready(function () {
         data: tweetData
       })
         .then(loadTweets())
+        .then($('#compose').show(300))
+        .then($('#me').show(300))
+        .then($('#long').hide())
+        .then($('#short').hide())
+        .then($('#error').hide())
         .then($('textarea').val(''))
         .catch(err => console.log(err))
 
