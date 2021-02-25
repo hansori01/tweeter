@@ -5,43 +5,6 @@ $(document).ready(function () {
    * Reminder: Use (and do all your DOM work in) jQuery's document ready function
    */
 
-  // Fake data taken from initial-tweets.json
-  const data = [
-    {
-      "user": {
-        "name": "Bruno Mars",
-        "avatars": "/images/profile2.png",
-        "handle": "@uptown_dont_flunk"
-      },
-      "content": {
-        "text": "I'm replacing twitter with this app!"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Ariel",
-        "avatars": "/images/profile3.png",
-        "handle": "@underthec"
-      },
-      "content": {
-        "text": "What is afoot on this app?"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Violet Beauregarde",
-        "avatars": "/images/profile4.png",
-        "handle": "@blueberry_girl17"
-      },
-      "content": {
-        "text": "...back on gum!"
-      },
-      "created_at": 1461116232227
-    }
-  ]
-
   //loops array of tweet objects and appends each to ".messages"
   const renderTweets = function (tweets) {
 
@@ -79,35 +42,37 @@ $(document).ready(function () {
     return $tweet;
   }
   // appends data in hardcoded 'db' to html body.
-  renderTweets(data);
+  // renderTweets(data);
 
 
-
-
-  // a function using ajax to post tweet to db
-  // target the form element in HTML
-  //with jQuery, listen for form submission with submit handler
-  $('form').submit(event => {
-    // prevent the default behavior of post request and reloading page.
+// user submits a tweet
+  $('form').submit(function (event) {
     event.preventDefault();
-    // use .serialize() turns form data into query string
-    const tweetData = $('textarea').serialize();
-    // console.log('form data: ' + tweetData)
+    const tweetData = $(this).serialize();
     $.ajax({
       url: '/tweets',
       method: "POST",
-      // the serialized data is sent to server in the data field of AJAX post request.
       data: tweetData
     })
-    .then(console.log(tweetData))
+      .then(console.log(tweetData))
   });
 
+  //TODO when serialized outputs title= how is it going into the object propoerly?
 
 
-  // Create a string in the format name=value&name=value...
-//   const tweetData = $(this).serialize();
-//   console.log(tweetData);
 
-
+  // Fetch tweets to display on page
+const loadTweets = function() {
+  console.log('loading the tweets')
+  $.ajax({
+    url: '/tweets',
+    method: "GET",  
+  })
+  .then((tweets)=>{
+    // console.log(tweets);
+    renderTweets(tweets);
+  })
+};
+loadTweets();
 
 });

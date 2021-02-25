@@ -1,24 +1,35 @@
 [
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
+      "name": "Bruno Mars",
+      "avatars": "/images/profile2.png",
+      "handle": "@uptown_dont_flunk"
     },
     "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+      "text": "I'm replacing twitter with this app!"
     },
-    "created_at": 1614035967675
+    "created_at": 1613952224045
   },
   {
     "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
+      "name": "Ariel",
+      "avatars": "/images/profile3.png",
+      "handle": "@underthec"
     },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "What is afoot on this app?"
     },
-    "created_at": 1614122367675
+    "created_at": 1614038624045
+  },
+  {
+    "user": {
+      "name": "Violet Beauregarde",
+      "avatars": "/images/profile4.png",
+      "handle": "@blueberry_girl17"
+    },
+    "content": {
+      "text": "...back on gum!"
+    },
+    "created_at": 1614125024045
   }
 ]
