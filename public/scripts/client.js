@@ -17,38 +17,47 @@ $(document).ready(function () {
 
   // individual Tweet HTML body is returned
   const createTweetElement = function (tweet) {
-    let $tweet = $(`<article>
-    <header>
-    <div class='tweeter'>
-    <span class ='profile'>
-    <img src=${tweet.user.avatars}> 
-    ${tweet.user.name}
-    </span>
-    <span class='handle'>${tweet.user.handle}</span>
-    </div>
-    </header>
-    <div class='tweet'>${tweet.content.text}<hr></div>
-    <footer>
-    <div class ='timestamp'><p>1s ago</p></div>
-    <div class='interact' style="list-style-type:none">
-    <i class="far fa-flag "></i>
-    <i class="fas fa-retweet"></i>
-    <i class="far fa-heart"></i>
-    </div>       
-    </footer>
-    </article>
-    `)
+    const $tweet = $(`<article></article>`)
+
+    const header = $(
+      `<header>
+  <div class='tweeter'>
+  <span class ='profile'>
+  <img src=${tweet.user.avatars}> 
+  ${tweet.user.name}
+  </span>
+  <span class='handle'>${tweet.user.handle}</span>
+  </div>
+  </header>`
+    )
+
+    const safeInput = $("<div>").text(tweet.content.text);
+    safeInput.addClass('tweet')
+
+    const footer = $(
+      `<footer>
+  <div class ='timestamp'><p>1s ago</p></div>
+  <div class='interact' style="list-style-type:none">
+  <i class="far fa-flag "></i>
+  <i class="fas fa-retweet"></i>
+  <i class="far fa-heart"></i>
+  </div>       
+  </footer>`
+    )
+
+    $tweet
+      .append(header)
+      .append(safeInput)
+      .append(footer);
 
     return $tweet;
   }
-  // appends data in hardcoded 'db' to html body.
-  // renderTweets(data);
 
 
   // user submits a tweet
   $('form').submit(function (event) {
     event.preventDefault();
-  
+    const textContent = $(this).text()
     const tweetData = $(this).serialize();
     const tweetLength = $('textarea').val().length;
 
@@ -65,7 +74,6 @@ $(document).ready(function () {
         method: "POST",
         data: tweetData
       })
-        // .then(console.log(tweetData))
         .then(loadTweets())
         .then($('textarea').val(''))
         .catch(err => console.log(err))
