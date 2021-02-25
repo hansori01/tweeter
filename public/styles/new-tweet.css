@@ -40,7 +40,6 @@ textarea {
   border: none;
   resize: none;
   overflow: auto;
-  opacity: .9;
   outline: none;
   width: 80%;
   height: 3em;
@@ -55,8 +54,7 @@ textarea#tweet-text {
 }
 
 textarea::placeholder {
-  opacity: .65;
-  color: #545149;
+  color: #5451497e;
   font-family: Tahoma, sans-serif;
   justify-content: flex-end;
 }

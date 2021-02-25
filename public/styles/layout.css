@@ -74,7 +74,6 @@ article:hover {
   margin-right: 3vw;
 }
 
-
 .tweeter {
   display: flex;
   justify-content: space-between;
@@ -91,6 +90,7 @@ article:hover {
 }
 
 article:hover .profile {
+  font-weight: 700;
   color: #183e72c7;
 }
 
@@ -104,6 +104,7 @@ article:hover .profile {
 }
 
 article:hover .handle {
+  font-weight: 500;
   color: #7EA4A9;
   margin-right: 1.4em;
 }
@@ -126,6 +127,7 @@ article:hover .tweeter img {
   font-size: 1.1rem;
   font-weight: 200;
   color: #2f2f2f;
+  word-wrap: anywhere
 }
 
 article footer {
@@ -149,7 +151,11 @@ article footer {
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  color: #2f2f2f;
+  color: #d9e1e291;
+}
+
+article:hover .interact {
+  color: #7EA4A9;
 }
 
 .far {
