@@ -65,8 +65,9 @@ $(document).ready(function () {
         method: "POST",
         data: tweetData
       })
-        .then(console.log(tweetData))
+        // .then(console.log(tweetData))
         .then(loadTweets())
+        .then($('textarea').val(''))
         .catch(err => console.log(err))
 
     }
