@@ -2,7 +2,7 @@ section.new-tweet {
   display: flex;
   flex-direction: column;
   min-height: 12em;
-  width: 63vw;
+  width: 100vw;
 }
 
 .new-tweet h2 {
@@ -10,7 +10,7 @@ section.new-tweet {
   font-size: 0.8em;
   color: #fffffff1;
   margin-left: 2em;
-  margin-top: 1.5em;
+  margin-top: 2rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -40,12 +40,13 @@ form {
   display: flex;
   flex-direction: column;
   min-height: 8em;
-  width: 63vw;
+  width: 90vw;
   justify-content: center;
   align-self: center;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.404);
+  margin-bottom: 3vh;
   transition: 0.2s;
 }
 
@@ -73,8 +74,9 @@ textarea#tweet-text {
 
 textarea::placeholder {
   color: #5451497e;
+  font-size: 1.2rem;
+  font-weight: 500;
   font-family: Tahoma, sans-serif;
-  justify-content: flex-end;
 }
 
 form div {

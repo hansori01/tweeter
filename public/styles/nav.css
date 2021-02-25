@@ -1,5 +1,5 @@
 nav {
-  height: 80px;
+  height: 8vh;
   width: 100vw;
   background-color: #202b3a;
   display: flex;
@@ -11,24 +11,22 @@ nav {
 
 nav span {
   font-family: 'Bungee', sans-serif;
-  margin: 1.5em;
+  margin: 3vw;
   color: #EEC124;
 }
 
 nav strong {
   display: block;
   white-space: pre;
-  /*look up the problem as others have probably approached this issue as well
-  pinpointed strong to be 'inline' so we turn that to 'block' 
-  and we target it to read white-space*/
+
 }
 
 nav div {
   display: flex;
   align-items: center;
   white-space: normal;
-  margin: 1.5em;
-  font-size: .8em;
+  margin: 1vw;
+  font-size: 1rem;
   color: #ffffff
 }
 
@@ -36,8 +34,9 @@ nav strong::first-letter {
   color: #ED451D;
 }
 
+
 .fixFixed {
-  height: 100px;
+  height: 8vh;
 }
 
 /* 

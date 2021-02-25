@@ -7,20 +7,21 @@ assist: https://www.transparenttextures.com/
 */
 
 header.user {
-  height: 400px;
-  width: 100vw;
-  background: url(../images/food.png);
-  background-color: #202b3a;
-  /*#33585d*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 30vh;
+  width: 100vw;
+  background: url(../images/food.png);
+  background-color: #202b3a;
 }
 
 .user img {
-  height: 15rem;
+  height: 8rem;
+/* change size for bigger device */
 }
+
 
 #error {
   display:none;
@@ -29,8 +30,8 @@ header.user {
 div.name {
   display: flex;
   justify-content: flex-start;
-  font-size: 22px;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
   margin: 0px;
   text-decoration: underline #EEC124;
   text-underline-offset: 0.35em;
@@ -40,5 +41,5 @@ div h2 {
 
   margin-top: 0px;
   margin-bottom: 10px;
-  text-shadow: #FFF 0px 0px 2px, #3F2463 0px 0px 2px, #3F2463 0px 0px 5px, #3F2463 0px 0px 7px, #3f2463c9 0px 0px 19px, #3f2463a4 0px 0px 10px;
+  text-shadow: #FFF 0px 0px 2px, #6f00ff 0px 0px 2px, #eec224c2 0px 0px 5px, #eec22493 0px 0px 7px, #eec22478 0px 0px 9px, #eec22423 0px 0px 10px;
 }
