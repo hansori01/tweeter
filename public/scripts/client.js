@@ -73,7 +73,7 @@ $(document).ready(function () {
       $('#short').toggle(300)
       $('#me').toggle()
       $('#error').toggle(300)
-      
+
     } else {
 
       $.ajax({
@@ -84,9 +84,9 @@ $(document).ready(function () {
         .then(loadTweets())
         .then($('#compose').show(300))
         .then($('#me').show(300))
-        .then($('#long').hide())
-        .then($('#short').hide())
-        .then($('#error').hide())
+        .then($('#long').hide(0))
+        .then($('#short').hide(0))
+        .then($('#error').hide(0))
         .then($('textarea').val(''))
         .catch(err => console.log(err))
 
