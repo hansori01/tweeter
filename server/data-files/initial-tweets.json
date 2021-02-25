@@ -8,7 +8,7 @@
     "content": {
       "text": "I'm replacing twitter with this app!"
     },
-    "created_at": 1614018232474
+    "created_at": 1614019267217
   },
   {
     "user": {
@@ -19,17 +19,17 @@
     "content": {
       "text": "What is afoot on this app?"
     },
-    "created_at": 1614104632474
+    "created_at": 1614105667217
   },
   {
     "user": {
-      "name": "Violet Beauregarde",
+      "name": "Violet",
       "avatars": "/images/profile4.png",
       "handle": "@blueberry_girl17"
     },
     "content": {
       "text": "...back on gum!"
     },
-    "created_at": 1614191032474
+    "created_at": 1614192067217
   }
 ]

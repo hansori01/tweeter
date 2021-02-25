@@ -63,16 +63,16 @@ $(document).ready(function () {
     console.log(tweetLength);
     //alerts thrown if '' or too long
     if (tweetLength > 140) {
-      $('#compose').toggle(300)
-      $('#me').toggle()
-      $('#error').toggle(300)
-      $('#long').toggle(300)
+      $('#compose').fadeToggle(0)
+      $('#me').fadeToggle(0)
+      $('#error').fadeToggle(0)
+      $('#long').fadeToggle(0)
 
     } else if (tweetLength === 0) {
-      $('#compose').toggle(300)
-      $('#short').toggle(300)
-      $('#me').toggle()
-      $('#error').toggle(300)
+      $('#compose').fadeToggle(0)
+      $('#short').fadeToggle(0)
+      $('#me').fadeToggle(0)
+      $('#error').fadeToggle(0)
 
     } else {
 
