@@ -64,16 +64,16 @@ $(document).ready(function () {
     //alerts thrown if '' or too long
     if (tweetLength > 140) {
       $('#compose').toggle(300)
-      $('#me').toggle(300)
+      $('#me').toggle()
       $('#error').toggle(300)
       $('#long').toggle(300)
 
     } else if (tweetLength === 0) {
       $('#compose').toggle(300)
       $('#short').toggle(300)
-      $('#me').toggle(300)
+      $('#me').toggle()
       $('#error').toggle(300)
-
+      
     } else {
 
       $.ajax({
