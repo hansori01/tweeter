@@ -45,16 +45,29 @@ $(document).ready(function () {
   // renderTweets(data);
 
 
-// user submits a tweet
+  // user submits a tweet
   $('form').submit(function (event) {
     event.preventDefault();
+  
     const tweetData = $(this).serialize();
-    $.ajax({
-      url: '/tweets',
-      method: "POST",
-      data: tweetData
-    })
-      .then(console.log(tweetData))
+    const tweetLength = $('textarea').val().length;
+
+    console.log(tweetLength);
+    //alerts thrown if '' or too long
+    if (tweetLength > 140) {
+      alert('Your tweet is too long 😜')
+    } else if (tweetLength === 0) {
+      alert('What did you have on your mind?')
+
+    } else {
+      $.ajax({
+        url: '/tweets',
+        method: "POST",
+        data: tweetData
+      })
+        .then(console.log(tweetData))
+        .catch(err => console.log(err))
+    }
   });
 
   //TODO when serialized outputs title= how is it going into the object propoerly?
@@ -62,17 +75,17 @@ $(document).ready(function () {
 
 
   // Fetch tweets to display on page
-const loadTweets = function() {
-  console.log('loading the tweets')
-  $.ajax({
-    url: '/tweets',
-    method: "GET",  
-  })
-  .then((tweets)=>{
-    // console.log(tweets);
-    renderTweets(tweets);
-  })
-};
-loadTweets();
+  const loadTweets = function () {
+    console.log('loading the tweets')
+    $.ajax({
+      url: '/tweets',
+      method: "GET",
+    })
+      .then((tweets) => {
+        // console.log(tweets);
+        renderTweets(tweets);
+      })
+  };
+  loadTweets();
 
 });
