@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $('.messages').append($tweet);
+      $('.messages').prepend($tweet);
     }
 
   }
@@ -58,15 +58,17 @@ $(document).ready(function () {
       alert('Your tweet is too long 😜')
     } else if (tweetLength === 0) {
       alert('What did you have on your mind?')
-
     } else {
+
       $.ajax({
         url: '/tweets',
         method: "POST",
         data: tweetData
       })
         .then(console.log(tweetData))
+        .then(loadTweets())
         .catch(err => console.log(err))
+
     }
   });
 
