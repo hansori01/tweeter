@@ -6,13 +6,13 @@ This is a project working on my HTML, CSS, JS, jQuery and AJAX front-end skills 
 
 ## Final Product
 
-### Cellphone or Tablet... Tweeter is on all your devices!
+### Cellphone or Tablet... Tweeter is on *all* your devices!
 !["Login page"](https://github.com/hansori01/tweeter/blob/master/docs/tweeter1.png?raw=true)
  
 ### Now with buttery smooth animation... Tweeter is sleek, modern and cartoony.
 !["My URLS page showing your unique TinyURLs"](https://github.com/hansori01/tweeter/blob/master/docs/tweeter2.gif?raw=true)
 
-### Tweeter is an app with a lot of attitude... Just like you!
+### Tweeter is an app with a lot of *attitude*... Just like you!
 !["You can even edit your stored links!"](https://github.com/hansori01/tweeter/blob/master/docs/tweeter3.gif?raw=true)
 
 
