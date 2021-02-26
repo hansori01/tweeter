@@ -37,7 +37,7 @@ section.tweets-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 12em;
+  min-height: 8em;
   width: 90vw;
 }
 
@@ -71,11 +71,9 @@ article:hover {
 }
 
 .profile {
-  /* TODO on tablet/pc font weight at 500 */
   display: flex;
   align-items: center;
   font-size: 1rem;
-  /* font-weight: 500; */
   color: #183e7278;
   font-weight: 700;
   transition: 0.3s;
@@ -115,7 +113,6 @@ article:hover .tweeter img {
 }
 
 .tweet {
-  /* TODO if tablet or pc width at 80% */
   display: flex;
   width: 88%;
   align-self: center;
@@ -163,6 +160,50 @@ article:hover .interact {
   margin: 0.4rem;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+/* Tablet Size */
+
+@media only screen and (min-width: 768px) {
+  article {
+    width: 80vw;
+  }
+  .profile {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .handle {
+    font-size: 1rem;
+  }
+  .tweet {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+/* justify-content: flex-start; */
+  }
+  .fixFixed {
+    display:none;
+  }
+  main {
+    display: flex;
+    align-items: flex-end;
+    width: 60vw;
+  }
+  section.tweets-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 8em;
+    width: 60vw;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    min-height: 8em;
+    width: 45vw;
+    max-width: 750px;
+  }
+}

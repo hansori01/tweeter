@@ -13,6 +13,7 @@ nav span {
   font-family: 'Bungee', sans-serif;
   margin: 3vw;
   color: #EEC124;
+  font-size: 1rem;
 }
 
 nav strong {
@@ -26,7 +27,7 @@ nav div {
   align-items: center;
   white-space: normal;
   margin: 1vw;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #ffffff
 }
 
@@ -39,5 +40,30 @@ nav strong::first-letter {
   height: 8vh;
 }
 
-/* 
-The inner content should not be touching the viewport edge on any side and should remain 1.5ems away from all edges */
+@media only screen and (min-width: 768px) {
+  nav {
+    height: 10vh;
+  }
+  nav span {
+    margin: 4vw;
+    font-size: 1.5rem;
+  }
+  nav div {
+    margin: 1.5vw;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    height: 12vh;
+  }
+  nav span {
+    margin: 4vw;
+    font-size: 1.5rem;
+  }
+  nav div {
+    margin: 1.5vw;
+    font-size: 1.2rem;
+  }
+}

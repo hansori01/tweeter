@@ -65,14 +65,14 @@ $(document).ready(function () {
     if (tweetLength > 140) {
       $('#compose').fadeToggle(0)
       $('#me').fadeToggle(0)
-      $('#error').fadeToggle(0)
-      $('#long').fadeToggle(0)
+      $('#error').fadeToggle(500)
+      $('#long').fadeToggle(500)
 
     } else if (tweetLength === 0) {
       $('#compose').fadeToggle(0)
-      $('#short').fadeToggle(0)
       $('#me').fadeToggle(0)
-      $('#error').fadeToggle(0)
+      $('#short').fadeToggle(600)
+      $('#error').fadeToggle(600)
 
     } else {
 
