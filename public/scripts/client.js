@@ -17,6 +17,9 @@ $(document).ready(function () {
 
   // individual Tweet HTML body is returned
   const createTweetElement = function (tweet) {
+
+  //moment to update timestamp
+    const timeStamp = moment(tweet.created_at).fromNow();
     const $tweet = $(`<article></article>`)
 
     const header = $(
@@ -36,7 +39,7 @@ $(document).ready(function () {
 
     const footer = $(
       `<footer>
-  <div class ='timestamp'><p>1s ago</p></div>
+  <div class ='timestamp'><p>${timeStamp}</p></div>
   <div class='interact' style="list-style-type:none">
   <i class="far fa-flag "></i>
   <i class="fas fa-retweet"></i>
@@ -65,14 +68,15 @@ $(document).ready(function () {
     if (tweetLength > 140) {
       $('#compose').fadeToggle(0)
       $('#me').fadeToggle(0)
-      $('#error').fadeToggle(300)
-      $('#long').fadeToggle(300)
+      $('#long').fadeToggle(100)
+      $('#error').fadeToggle(1800)
 
     } else if (tweetLength === 0) {
       $('#compose').fadeToggle(0)
       $('#me').fadeToggle(0)
-      $('#short').fadeToggle(0)
-      $('#error').fadeToggle(0)
+      $('#short').fadeToggle(100)
+      $('#error').fadeToggle(1800)
+
       // if error message is already visible
       // run the above but with opposite.
 
