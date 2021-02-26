@@ -17,13 +17,12 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
   color: #fffffffb;
   background-color: #202b3a;
   font-size: 22px;
   font-family: 'Tamaho', sans-serif;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
 }
 
 main {
@@ -62,8 +61,6 @@ article {
 
 article:hover {
   box-shadow: 20px 20px 10px -2px rgba(0, 0, 0, 0.74);
-  /* margin-right: 3vw; */
-
 }
 
 .tweeter {
@@ -114,8 +111,8 @@ article:hover .tweeter img {
 
 .tweet {
   display: flex;
-  width: 88%;
   align-self: center;
+  width: 88%;
   font-size: 1.1rem;
   font-weight: 200;
   color: #2f2f2f;
@@ -123,11 +120,11 @@ article:hover .tweeter img {
 }
 
 article footer {
-  align-self: center;
   display: flex;
-  width: 90%;
   flex-direction: row;
   justify-content: space-between;
+  align-self: center;
+  width: 90%;
   margin-top: 0.2em;
 }
 
@@ -159,7 +156,6 @@ article:hover .interact {
 }
 
 /* Tablet view */
-
 @media only screen and (min-width: 768px) {
   article {
     width: 80vw;
@@ -177,7 +173,6 @@ article:hover .interact {
 }
 
 /* Desktop view */
-
 @media only screen and (min-width: 1024px) {
   body {
     display: flex;

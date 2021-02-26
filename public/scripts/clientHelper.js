@@ -1,7 +1,7 @@
 
-$(document).ready(function () {
-  $("textarea").on('input', charCountColour)
-});
+// $(document).ready(function () {
+//   $("textarea").on('input', charCountColour)
+// });
 
 
 // Counts characters left and changes colour
@@ -20,4 +20,4 @@ const charCountColour = function() {
   if (charCount >= 21) {
      $("output").css('color', '');
   }
-}
+};

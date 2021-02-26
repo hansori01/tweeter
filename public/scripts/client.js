@@ -1,14 +1,15 @@
 $(document).ready(function () {
 
+  //Counts character and changes color
+  $("textarea").on('input', charCountColour);
 
-  //loops array of tweet objects and appends each to ".messages"
+  // loops array of tweet objects and appends each to ".messages"
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('.messages').prepend($tweet);
     }
-
-  }
+  };
 
   // individual Tweet HTML body is returned
   const createTweetElement = function (tweet) {
@@ -16,7 +17,6 @@ $(document).ready(function () {
     //moment to update timestamp
     const timeStamp = moment(tweet.created_at).fromNow();
     const $tweet = $(`<article></article>`)
-
     const header = $(
       `<header>
   <div class='tweeter'>
@@ -28,10 +28,8 @@ $(document).ready(function () {
   </div>
   </header>`
     )
-
     const safeInput = $("<div>").text(tweet.content.text);
     safeInput.addClass('tweet')
-
     const footer = $(
       `<footer>
   <div class ='timestamp'><p>${timeStamp}</p></div>
@@ -49,7 +47,7 @@ $(document).ready(function () {
       .append(footer);
 
     return $tweet;
-  }
+  };
 
 
   // user submits a tweet
@@ -58,8 +56,7 @@ $(document).ready(function () {
     const tweetData = $(this).serialize();
     const tweetLength = $('textarea').val().length;
 
-    console.log(tweetLength);
-    //alerts thrown if '' or too long
+    //alerts thrown if length is 0 or too long
     if (tweetLength > 140) {
       $('#compose').fadeToggle(0)
       $('#me').fadeToggle(0)
@@ -92,7 +89,6 @@ $(document).ready(function () {
 
   // Fetch tweets to display on page
   const loadTweets = function () {
-    console.log('loading the tweets')
     return $
       .ajax({
         url: '/tweets',
@@ -104,19 +100,10 @@ $(document).ready(function () {
   };
   loadTweets();
 
-  // $('article').on('mouseenter', function () {
-  // // add and remove classes
-  // // when the article is being hovered it addClass
-  // // make mouseleave = remove class
-  // });
-
-
   // Nav bar text to text area
   $('#navCompose')
     .css('cursor', 'pointer')
     .click(function () {
       $('#tweet-text').focus()
     });
-
-
 });

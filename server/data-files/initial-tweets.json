@@ -8,7 +8,18 @@
     "content": {
       "text": "I'm replacing twitter with this app!"
     },
-    "created_at": 1614048998918
+    "created_at": 1614055750581
+  },
+  {
+    "user": {
+      "name": "Violet",
+      "avatars": "/images/profile4.png",
+      "handle": "@blueberry_girl17"
+    },
+    "content": {
+      "text": " this app is my kind of gum!"
+    },
+    "created_at": 1614142150581
   },
   {
     "user": {
@@ -19,17 +30,6 @@
     "content": {
       "text": "Tweeter is where the people are ~ 🎶"
     },
-    "created_at": 1614135398918
-  },
-  {
-    "user": {
-      "name": "Violet",
-      "avatars": "/images/profile4.png",
-      "handle": "@blueberry_girl17"
-    },
-    "content": {
-      "text": "@O.loompa82 this app is my kind of gum!"
-    },
-    "created_at": 1614221798918
+    "created_at": 1614228550581
   }
 ]

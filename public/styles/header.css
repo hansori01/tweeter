@@ -42,7 +42,6 @@ div h2 {
 }
 
 /* Tablet view */
-
 @media only screen and (min-width: 768px) {
   .user img {
     height: 15rem;
@@ -58,7 +57,6 @@ div h2 {
 }
 
 /* Desktop view */
-
 @media only screen and (min-width: 1024px) {
   .fixFixed {
     display: none;
