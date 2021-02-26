@@ -73,8 +73,8 @@ $(document).ready(function () {
       $('#me').fadeToggle(0)
       $('#short').fadeToggle(0)
       $('#error').fadeToggle(0)
-// if error message is already visible
-// run the above but with opposite.
+      // if error message is already visible
+      // run the above but with opposite.
 
     } else {
 
@@ -108,12 +108,19 @@ $(document).ready(function () {
   };
   loadTweets();
 
-$('article').on('mouseenter', function () {
-// add and remove classes
-// when the article is being hovered it addClass
-// make mouseleave = remove class
+  // $('article').on('mouseenter', function () {
+  // // add and remove classes
+  // // when the article is being hovered it addClass
+  // // make mouseleave = remove class
+  // });
 
 
-});
+  // Nav bar text to text area
+  $('#navCompose')
+    .css('cursor', 'pointer')
+    .click(function () {
+      $('#tweet-text').focus()
+    });
+
 
 });
