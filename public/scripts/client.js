@@ -1,13 +1,8 @@
 $(document).ready(function () {
-  /*
-   * Client-side JS logic goes here
-   * jQuery is already loaded
-   * Reminder: Use (and do all your DOM work in) jQuery's document ready function
-   */
+
 
   //loops array of tweet objects and appends each to ".messages"
   const renderTweets = function (tweets) {
-
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('.messages').prepend($tweet);
@@ -18,7 +13,7 @@ $(document).ready(function () {
   // individual Tweet HTML body is returned
   const createTweetElement = function (tweet) {
 
-  //moment to update timestamp
+    //moment to update timestamp
     const timeStamp = moment(tweet.created_at).fromNow();
     const $tweet = $(`<article></article>`)
 
@@ -68,17 +63,14 @@ $(document).ready(function () {
     if (tweetLength > 140) {
       $('#compose').fadeToggle(0)
       $('#me').fadeToggle(0)
-      $('#long').fadeToggle(100)
-      $('#error').fadeToggle(1800)
+      $('#long').fadeToggle(0)
+      $('#error').fadeToggle(0)
 
     } else if (tweetLength === 0) {
       $('#compose').fadeToggle(0)
       $('#me').fadeToggle(0)
-      $('#short').fadeToggle(100)
-      $('#error').fadeToggle(1800)
-
-      // if error message is already visible
-      // run the above but with opposite.
+      $('#short').fadeToggle(0)
+      $('#error').fadeToggle(0)
 
     } else {
 

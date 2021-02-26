@@ -1,22 +1,10 @@
 
 $(document).ready(function () {
-
   $("textarea").on('input', charCountColour)
-
-  //I want to resize the new tweet section when typing
-  // $("textarea")
-  // .each(function () {
-  //   this.setAttribute("style", `${this.scrollHeight}px; overflow-y:hidden;`);
-  // })
-  // .on("input", function () {
-  //   this.style.height = "auto";
-  //   this.style.height = `${this.scrollHeight}px`;
-  // });
-
 });
 
 
-// Changes characters left count and its colour as user types
+// Counts characters left and changes colour
 const charCountColour = function() {
 
   let charCount = 140 - this.value.length;

@@ -30,9 +30,10 @@
       <div id='navCompose'><strong> > compose </strong>Tweet<div>
     </nav>
 
-    <!--Space for fixed nav-->
+    <!--Offsets nav as a sticky item-->
     <div class='fixFixed'></div>
 
+    <!--User information-->
     <header class='user'>
       <div>
         <img id='me' src="/images/profile1.png"> 
@@ -44,9 +45,8 @@
       </div>
     </header>
   
-    <!-- Page-specific (main) content here -->
+    <!-- New Tweets-->
     <main class="container">
-
       <section class="new-tweet">
         <h2 id='compose'> > compose Tweet</h2>
         <h2 id='short'> > your Tweet must include a message...</h2>
@@ -63,13 +63,10 @@
         </h2>
       </section>
 
-
-      <section class="tweets-container">
-
-        <section class='messages'></section>
-        <!--clinet.js holds createTweetElement function that inserts items here-->
-
-     </section>
+    <!--clinet.js holds createTweetElement function that inserts items here-->
+    <section class="tweets-container">
+      <section class='messages'></section>
+      </section>
     </section>
 
     </main>
