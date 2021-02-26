@@ -147,6 +147,10 @@ form:hover .button-counter button:hover {
   section.new-tweet {
     width: 60vw;
   }
+  .new-tweet h2 {
+    margin-top: 3rem;
+    margin-left: 5em;
+  }
   form {
     width: 45vw;
     justify-content: center;

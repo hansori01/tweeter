@@ -85,11 +85,9 @@ article:hover .profile {
 }
 
 .handle {
-  /* TODO on tablet/pc color back to lighter */
   display: flex;
   margin-right: 1.2em;
   color: #7EA4A9;
-  /* color: #7ea4a92c; */
   font-weight: 500;
   font-size: .9rem;
   transition: 0.3s;
@@ -139,13 +137,11 @@ article footer {
 }
 
 .interact {
-  /* TODO on desktop and tablet lower color */
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
   color: #7EA4A9;
-  /* color: #d9e1e291; */
 }
 
 article:hover .interact {
@@ -182,10 +178,9 @@ article:hover .interact {
   body {
     display: flex;
     flex-direction: row;
-/* justify-content: flex-start; */
   }
   .fixFixed {
-    display:none;
+    display: none;
   }
   main {
     display: flex;
@@ -205,5 +200,11 @@ article:hover .interact {
     min-height: 8em;
     width: 45vw;
     max-width: 750px;
+  }
+  .handle {
+    color: #7ea4a92c;
+  }
+  .interact {
+    color: #d9e1e291;
   }
 }
