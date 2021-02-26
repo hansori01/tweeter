@@ -41,6 +41,7 @@ div h2 {
   text-shadow: #FFF 0px 0px 2px, #6f00ff 0px 0px 2px, #eec224c2 0px 0px 5px, #eec22493 0px 0px 7px, #eec22478 0px 0px 9px, #eec22423 0px 0px 10px;
 }
 
+/* Tablet view */
 @media only screen and (min-width: 768px) {
   .user img {
     height: 15rem;
@@ -55,6 +56,7 @@ div h2 {
   }
 }
 
+/* Desktop view */
 @media only screen and (min-width: 1024px) {
   .fixFixed {
     display:none;

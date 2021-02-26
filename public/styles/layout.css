@@ -57,11 +57,13 @@ article {
   border-radius: 15px;
   box-shadow: 13px 15px 15px -3px rgba(0, 0, 0, 0.404);
   margin-bottom: 3vh;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 article:hover {
   box-shadow: 20px 20px 10px -2px rgba(0, 0, 0, 0.74);
+  margin-right: 3vw;
+
 }
 
 .tweeter {
@@ -156,7 +158,7 @@ article:hover .interact {
   margin: 0.4rem;
 }
 
-/* Tablet Size */
+/* Tablet view */
 
 @media only screen and (min-width: 768px) {
   article {
@@ -173,6 +175,8 @@ article:hover .interact {
     width: 80%;
   }
 }
+
+/* Desktop view */
 
 @media only screen and (min-width: 1024px) {
   body {

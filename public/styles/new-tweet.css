@@ -124,6 +124,7 @@ form:hover .button-counter button:hover {
   font-weight: 900;
 }
 
+/* Tablet view */
 @media only screen and (min-width: 768px) {
   form {
     min-height: 15vh;
@@ -138,7 +139,7 @@ form:hover .button-counter button:hover {
     margin-top: 1rem;
   }
 }
-
+/* Desktop view */
 @media only screen and (min-width: 1024px) {
 
   .container {

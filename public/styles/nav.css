@@ -40,6 +40,7 @@ nav strong::first-letter {
   height: 8vh;
 }
 
+/* Tablet view */
 @media only screen and (min-width: 768px) {
   nav {
     height: 10vh;
@@ -54,6 +55,7 @@ nav strong::first-letter {
   }
 }
 
+/* Desktop view */
 @media only screen and (min-width: 1024px) {
   nav {
     height: 12vh;
