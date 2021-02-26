@@ -42,6 +42,7 @@ div h2 {
 }
 
 /* Tablet view */
+
 @media only screen and (min-width: 768px) {
   .user img {
     height: 15rem;
@@ -57,9 +58,10 @@ div h2 {
 }
 
 /* Desktop view */
+
 @media only screen and (min-width: 1024px) {
   .fixFixed {
-    display:none;
+    display: none;
   }
   header.user {
     display: flex;
@@ -68,7 +70,9 @@ div h2 {
     align-items: center;
     height: 100vh;
     min-width: 330px;
-
+    position: sticky;
+    top: 0;
+    left: 0;s
   }
   .user img {
     height: 16rem;

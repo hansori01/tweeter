@@ -59,6 +59,7 @@ nav strong::first-letter {
 @media only screen and (min-width: 1024px) {
   nav {
     height: 12vh;
+    z-index: 20;
   }
   nav span {
     margin: 4vw;
