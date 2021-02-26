@@ -65,14 +65,16 @@ $(document).ready(function () {
     if (tweetLength > 140) {
       $('#compose').fadeToggle(0)
       $('#me').fadeToggle(0)
-      $('#error').fadeToggle(500)
-      $('#long').fadeToggle(500)
+      $('#error').fadeToggle(300)
+      $('#long').fadeToggle(300)
 
     } else if (tweetLength === 0) {
       $('#compose').fadeToggle(0)
       $('#me').fadeToggle(0)
-      $('#short').fadeToggle(600)
-      $('#error').fadeToggle(600)
+      $('#short').fadeToggle(0)
+      $('#error').fadeToggle(0)
+// if error message is already visible
+// run the above but with opposite.
 
     } else {
 
@@ -81,7 +83,7 @@ $(document).ready(function () {
         method: "POST",
         data: tweetData
       })
-        .then(loadTweets())
+        .then(loadTweets)
         .then($('#compose').show(300))
         .then($('#me').show(300))
         .then($('#long').hide(0))
@@ -89,26 +91,29 @@ $(document).ready(function () {
         .then($('#error').hide(0))
         .then($('textarea').val(''))
         .catch(err => console.log(err))
-
     }
   });
-
-  //TODO when serialized outputs title= how is it going into the object propoerly?
-
-
 
   // Fetch tweets to display on page
   const loadTweets = function () {
     console.log('loading the tweets')
-    $.ajax({
-      url: '/tweets',
-      method: "GET",
-    })
+    return $
+      .ajax({
+        url: '/tweets',
+        method: "GET",
+      })
       .then((tweets) => {
-        // console.log(tweets);
         renderTweets(tweets);
       })
   };
   loadTweets();
+
+$('article').on('mouseenter', function () {
+// add and remove classes
+// when the article is being hovered it addClass
+// make mouseleave = remove class
+
+
+});
 
 });
