@@ -27,7 +27,7 @@ $(document).ready(function () {
   <span class='handle'>${tweet.user.handle}</span>
   </div>
   </header>`
-    )
+    );
     const safeInput = $("<div>").text(tweet.content.text);
     safeInput.addClass('tweet')
     const footer = $(
@@ -39,7 +39,7 @@ $(document).ready(function () {
   <i class="far fa-heart"></i>
   </div>       
   </footer>`
-    )
+    );
 
     $tweet
       .append(header)
