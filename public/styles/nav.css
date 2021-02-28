@@ -4,7 +4,6 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
-  /* height: 8vh; */
   height: 3rem;
   width: 100vw;
   background-color: #202b3a;
@@ -37,15 +36,16 @@ nav strong::first-letter {
 
 
 .fixFixed {
-  /* height: 8vh;*/
-  height: 10rem;
-  /* background-color: red; */
+  height: 3rem;
 }
 
 /* Tablet view */
 @media only screen and (min-width: 768px) {
   nav {
-    height: 10vh;
+    height: 5rem;
+  }
+  .fixFixed {
+    height: 5rem;
   }
   nav span {
     margin: 4vw;
@@ -60,9 +60,12 @@ nav strong::first-letter {
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
   nav {
-    height: 10rem;
+    height: 5rem;
     z-index: 20;
-    opacity: .8;
+    background-color: #334968;
+  }
+  .fixFixed {
+    height: 5rem;
   }
   nav span {
     margin: 4vw;

@@ -31,11 +31,11 @@ div.name {
   font-size: 0.9rem;
   letter-spacing: 0.2rem;
   margin: 0px;
-  text-decoration: underlie #EEC124;
+  text-decoration: underline #EEC124;
   text-underline-offset: 0.35em;
 }
 
-div h2 {
+div.name {
   margin-top: 0px;
   margin-bottom: 10px;
   text-shadow: #FFF 0px 0px 2px, #6f00ff 0px 0px 2px, #eec224c2 0px 0px 5px, #eec22493 0px 0px 7px, #eec22478 0px 0px 9px, #eec22423 0px 0px 10px;
@@ -58,9 +58,7 @@ div h2 {
 
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
-  /* .fixFixed {
-    display: none;
-  } */
+
   header.user {
     display: flex;
     flex-direction: column;
