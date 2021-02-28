@@ -1,7 +1,6 @@
 
 // Counts characters left and changes colour
 const charCountColour = function () {
-
    const charCount = 140 - this.value.length;
    $('output').text(charCount);
 
@@ -44,11 +43,11 @@ const resetState = () => {
 }
 
 const createTweetElement = function (tweet) {
-       //using 'moment.js' to update timestamp
-       const timeStamp = moment(tweet.created_at).fromNow();
-       const $tweet = $(`<article></article>`);
-       const header = $(
-         `<header>
+   //using 'moment.js' to update timestamp
+   const timeStamp = moment(tweet.created_at).fromNow();
+   const $tweet = $(`<article></article>`);
+   const header = $(
+      `<header>
      <div class='tweeter'>
      <span class ='profile'>
      <img src=${tweet.user.avatars}> 
@@ -57,11 +56,11 @@ const createTweetElement = function (tweet) {
      <span class='handle'>${tweet.user.handle}</span>
      </div>
      </header>`
-       );
-       const safeInput = $("<div>").text(tweet.content.text);
-       safeInput.addClass('tweet');
-       const footer = $(
-         `<footer>
+   );
+   const safeInput = $("<div>").text(tweet.content.text);
+   safeInput.addClass('tweet');
+   const footer = $(
+      `<footer>
      <div class ='timestamp'><p>${timeStamp}</p></div>
      <div class='interact' style="list-style-type:none">
      <i class="far fa-flag "></i>
@@ -69,12 +68,12 @@ const createTweetElement = function (tweet) {
      <i class="far fa-heart"></i>
      </div>       
      </footer>`
-       );
-   
-       $tweet
-         .append(header)
-         .append(safeInput)
-         .append(footer);
-   
-       return $tweet;
-     };
+   );
+
+   $tweet
+      .append(header)
+      .append(safeInput)
+      .append(footer);
+
+   return $tweet;
+};

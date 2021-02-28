@@ -52,7 +52,6 @@ div.name {
   }
   div.name {
     font-size: 1.3rem;
-    margin: 1rem;
   }
 }
 
@@ -71,7 +70,7 @@ div.name {
     left: 0;
   }
   .user img {
-    height: 16rem;
+    height: 18rem;
   }
   div.name {
     font-size: 1.5rem;

@@ -1,7 +1,7 @@
 section.new-tweet {
   display: flex;
   flex-direction: column;
-  min-height: 10em;
+  min-height: 12em;
 }
 
 .new-tweet h2 {

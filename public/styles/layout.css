@@ -17,8 +17,6 @@ html {
  */
 
 body {
-  /* display: flex;
-  flex-direction: column; */
   color: #fffffffb;
   background-color: #202b3a;
   font-size: 22px;
@@ -161,6 +159,7 @@ article:hover .interact {
 }
 
 /* Tablet view */
+
 @media only screen and (min-width: 768px) {
   article {
     width: 80vw;
@@ -178,15 +177,13 @@ article:hover .interact {
 }
 
 /* Desktop view */
+
 @media only screen and (min-width: 1024px) {
   main {
     display: flex;
     flex-direction: row;
     z-index: 15;
   }
-  /* .fixFixed {
-    display: none;
-  } */
   .container {
     display: flex;
     align-items: flex-end;
