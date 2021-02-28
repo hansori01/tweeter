@@ -158,7 +158,9 @@ form:hover .button-counter button:hover {
   }
   section.new-tweet {
     width: 60vw;
+    /* margin-top: 100px; */
   }
+
   .new-tweet h2 {
     margin-top: 3rem;
     margin-left: 5em;
