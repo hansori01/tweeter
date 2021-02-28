@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     //moment to update timestamp
     const timeStamp = moment(tweet.created_at).fromNow();
-    const $tweet = $(`<article></article>`)
+    const $tweet = $(`<article></article>`);
     const header = $(
       `<header>
   <div class='tweeter'>
@@ -29,7 +29,7 @@ $(document).ready(function () {
   </header>`
     );
     const safeInput = $("<div>").text(tweet.content.text);
-    safeInput.addClass('tweet')
+    safeInput.addClass('tweet');
     const footer = $(
       `<footer>
   <div class ='timestamp'><p>${timeStamp}</p></div>
@@ -58,19 +58,16 @@ $(document).ready(function () {
 
     //alerts thrown if length is 0 or too long
     if (tweetLength > 140) {
-      $('#compose').fadeToggle(0)
-      $('#me').fadeToggle(0)
-      $('#long').fadeToggle(0)
-      $('#error').fadeToggle(0)
-
+      $('#compose').fadeToggle(0);
+      $('#me').fadeToggle(0);
+      $('#long').fadeToggle(0);
+      $('#error').fadeToggle(0);
     } else if (tweetLength === 0) {
-      $('#compose').fadeToggle(0)
-      $('#me').fadeToggle(0)
-      $('#short').fadeToggle(0)
-      $('#error').fadeToggle(0)
-
+      $('#compose').fadeToggle(0);
+      $('#me').fadeToggle(0);
+      $('#short').fadeToggle(0);
+      $('#error').fadeToggle(0);
     } else {
-
       $.ajax({
         url: '/tweets',
         method: "POST",
@@ -83,7 +80,7 @@ $(document).ready(function () {
         .then($('#short').hide(0))
         .then($('#error').hide(0))
         .then($('textarea').val(''))
-        .catch(err => console.log(err))
+        .catch(err => console.log(err));
     }
   });
 
@@ -96,7 +93,7 @@ $(document).ready(function () {
       })
       .then((tweets) => {
         renderTweets(tweets);
-      })
+      });
   };
   loadTweets();
 
@@ -104,6 +101,6 @@ $(document).ready(function () {
   $('#navCompose')
     .css('cursor', 'pointer')
     .click(function () {
-      $('#tweet-text').focus()
+      $('#tweet-text').focus();
     });
 });
