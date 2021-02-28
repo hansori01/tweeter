@@ -30,7 +30,7 @@ const validateTweet = tweetLength => {
       return false;
    }
    return true;
-}
+};
 
 const resetState = () => {
    $('#compose').show(300);
@@ -40,7 +40,7 @@ const resetState = () => {
    $('#error').hide(0);
    $('textarea').val('');
    $('output').text('140');
-}
+};
 
 const createTweetElement = function (tweet) {
    //using 'moment.js' to update timestamp

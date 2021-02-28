@@ -30,7 +30,7 @@ $(document).ready(function () {
         .then(loadTweets)
         .then(resetState)
         .catch(err => console.log(err));
-    };
+    }
   });
 
   const loadTweets = function () {
