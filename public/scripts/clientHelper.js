@@ -1,17 +1,18 @@
 
 // Counts characters left and changes colour
+
 const charCountColour = function () {
    const charCount = 140 - this.value.length;
    $('output').text(charCount);
 
-   if (charCount < 21) {
+   if (charCount < 21 && charCount > 10) {
       $('output').css('color', 'LightSalmon');
-   } if (charCount < 11) {
+   } else if (charCount < 11 && charCount > 0) {
       $('output').css('color', 'Tomato');
-   } if (charCount < 1) {
+   } else if (charCount < 1) {
       $('output').css('color', '#8B0000');
    }
-   if (charCount >= 21) {
+   else if (charCount >= 21) {
       $('output').css('color', '');
    }
 };
