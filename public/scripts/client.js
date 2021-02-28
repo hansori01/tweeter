@@ -5,6 +5,8 @@ $(document).ready(function () {
 
   // loops array of tweet objects and appends each to ".messages"
   const renderTweets = function (tweets) {
+    //clears pre-loaded tweets to avoid loading every submit. Better way to do this?
+    $('.messages').empty();
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('.messages').prepend($tweet);
@@ -80,6 +82,7 @@ $(document).ready(function () {
         .then($('#short').hide(0))
         .then($('#error').hide(0))
         .then($('textarea').val(''))
+        .then($('output').text('140'))
         .catch(err => console.log(err));
     }
   });
