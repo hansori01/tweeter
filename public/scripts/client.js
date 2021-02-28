@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   //Counts character and changes color
-  $("textarea").on('input', charCountColour);
+  $('textarea').on('input', charCountColour);
 
   // loops array of tweet objects and appends each to ".messages"
   const renderTweets = function (tweets) {
