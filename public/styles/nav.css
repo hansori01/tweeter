@@ -4,7 +4,8 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
-  height: 8vh;
+  /* height: 8vh; */
+  height: 3rem;
   width: 100vw;
   background-color: #202b3a;
 }
@@ -36,7 +37,9 @@ nav strong::first-letter {
 
 
 .fixFixed {
-  height: 8vh;
+  /* height: 8vh;*/
+  height: 10rem;
+  /* background-color: red; */
 }
 
 /* Tablet view */
@@ -57,8 +60,9 @@ nav strong::first-letter {
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
   nav {
-    height: 12vh;
+    height: 10rem;
     z-index: 20;
+    opacity: .8;
   }
   nav span {
     margin: 4vw;

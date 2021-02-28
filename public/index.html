@@ -34,42 +34,43 @@
     <div class='fixFixed'></div>
 
     <!--User information-->
-    <header class='user'>
-      <div>
-        <img id='me' src="/images/profile1.png"> 
-        <img id='error' src="/images/error.png"> 
-      </div>
-      <br>
-      <div class="name">
-        <h2>Sori Han</h2>
-      </div>
-    </header>
+    <main>
+      <header class='user'>
+        <div>
+          <img id='me' src="/images/profile1.png"> 
+          <img id='error' src="/images/error.png"> 
+        </div>
+        <br>
+        <div class="name">
+          <h2>Sori Han</h2>
+        </div>
+      </header>
   
     <!-- New Tweets-->
-    <div class='separateMain'></div>
-    <main class="container">
-      <section class="new-tweet">
-        <h2 id='compose'> > compose Tweet</h2>
-        <h2 id='short'> > your Tweet must include a message...</h2>
-        <h2 id='long'> > your Tweet is too long...</h2>
-        <form>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class ='button-counter'>
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-        <h2 id='catch-up'> 
-          > recent Tweets
-        </h2>
-      </section>
 
-    <!--clinet.js holds createTweetElement function that inserts items here-->
-    <section class="tweets-container">
-      <section class='messages'></section>
-      </section>
-    </section>
+      <div class="container">
+        <section class="new-tweet">
+          <h2 id='compose'> > compose Tweet</h2>
+          <h2 id='short'> > your Tweet must include a message...</h2>
+          <h2 id='long'> > your Tweet is too long...</h2>
+          <form>
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div class ='button-counter'>
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+          <h2 id='catch-up'> 
+            > recent Tweets
+          </h2>
+        </section>
 
+      <!--clinet.js holds createTweetElement function that inserts items here-->
+        <section class="tweets-container">
+          <section class='messages'></section>
+          </section>
+        </section>
+      </div>
     </main>
   </body>
 </html>

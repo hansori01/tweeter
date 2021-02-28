@@ -58,9 +58,9 @@ div h2 {
 
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
-  .fixFixed {
+  /* .fixFixed {
     display: none;
-  }
+  } */
   header.user {
     display: flex;
     flex-direction: column;
